@@ -12,7 +12,7 @@ function Galerie() {
         <figure>
         <img src='/images/couple.jpg' alt='accueil image 'className='img-fluid' />
 
-        <figcaption>An elephant at sunset</figcaption>
+        <figcaption>COUPLE</figcaption>
 
         </figure>
           
@@ -22,7 +22,7 @@ function Galerie() {
         <figure>
         <img src='/images/love.jpg' alt='accueil image 'className='img-fluid' />
 
-        <figcaption>An elephant at sunset</figcaption>
+        <figcaption>AMOUR</figcaption>
 
         </figure>
 
@@ -40,7 +40,7 @@ function Galerie() {
       <figure>
         <img src='/images/enceinte.jpg' alt='accueil image 'className='img-fluid' />
 
-        <figcaption>An elephant at sunset</figcaption>
+        <figcaption>GROSSES</figcaption>
 
         </figure>
 
@@ -50,7 +50,7 @@ function Galerie() {
         <figure>
         <img src='/images/bbaby.jpg' alt='accueil image 'className='img-fluid' />
 
-        <figcaption>An elephant at sunset</figcaption>
+        <figcaption>BEBE</figcaption>
 
         </figure>
 
@@ -73,7 +73,7 @@ function Galerie() {
       <figure>
         <img src='/images/bapteme.jpg' alt='accueil image 'className='img-fluid' />
 
-        <figcaption>An elephant at sunset</figcaption>
+        <figcaption>BAPTEME</figcaption>
 
         </figure>
 
@@ -83,9 +83,9 @@ function Galerie() {
 
 
       <figure>
-        <img src='/images/tradition.jpg' alt='accueil image 'className='img-fluid' />
+        <img src='/images/famille.jpg' alt='accueil image 'className='img-fluid' />
 
-        <figcaption>An elephant at sunset</figcaption>
+        <figcaption>FAMILLE</figcaption>
 
         </figure>
 

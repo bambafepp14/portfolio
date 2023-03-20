@@ -8,13 +8,9 @@ const Header= ()=>{
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
-    <img src="/images/logo.png" className="imglog" />
+   <Link to={'/'} >  <img src="/images/logo.png" className="imglog" /></Link>
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item p-5">
-                    
-                
-                    <Link to={'/'} className="text-white" > accueil</Link>
-                </li>
+               
                 <li class="nav-item p-5">
                     <Link to={'/galerie'}className="text-white"> Galerie</Link>
                 </li>
