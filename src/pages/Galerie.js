@@ -1,61 +1,60 @@
 import logo from './logo.svg';
 import './Style.css';
 import './Galerie.css';
+import contentList from '../contents.json';
+
+
+
 
 function Galerie() {
+
+
+
+
+
+
+let galeries=contentList.filter(content=>content.type=='galerie')
+
+console.log (galeries)
+
+
+
+
+
+
   return (
     <div className="container">
       
-      <div className='row    border border-primary m-4 p-2 d-flex justify-content-around'  >
-        <div className='col-5 border border-dark galerie-col-1'>
+      <div className='row    m-4 p-2 d-flex justify-content-around'  >
+
+      {galeries.map(galerie=>
+
+      
+      <div   key={galerie.id}  className='col-5   galerie-col-1'>
+
 
         <figure>
-        <img src='/images/couple.jpg' alt='accueil image 'className='img-fluid' />
+        <img src={galerie.image} alt='accueil image 'className='img-fluid' />
 
-        <figcaption>COUPLE</figcaption>
+        <figcaption>{galerie.title}</figcaption>
 
         </figure>
           
 
         </div>
-        <div className='col-5 border  border-dark galerie-col-1 '>
-        <figure>
-        <img src='/images/love.jpg' alt='accueil image 'className='img-fluid' />
+        
+        
+        
+        )}
 
-        <figcaption>AMOUR</figcaption>
-
-        </figure>
-
-        </div>
 
         
+        
+        
 
-      </div>
-      <div className='row    border border-primary m-4 p-2 d-flex justify-content-around' >
       
 
-      <div className='col-5 border border-dark galerie-col-2'>
-
-
-      <figure>
-        <img src='/images/enceinte.jpg' alt='accueil image 'className='img-fluid' />
-
-        <figcaption>GROSSES</figcaption>
-
-        </figure>
-
-        </div>
-
-        <div className='col-5 border  border-dark galerie-col-2 '>
-        <figure>
-        <img src='/images/bbaby.jpg' alt='accueil image 'className='img-fluid' />
-
-        <figcaption>BEBE</figcaption>
-
-        </figure>
-
-        </div>
-
+        
 
         
 
@@ -66,8 +65,8 @@ function Galerie() {
 
       </div>
       
-      <div  className='row    border border-primary m-4 p-2 d-flex justify-content-around' >
-      <div  className='col-5 border border-dark galerie-col-2' >
+      <div  className='row    m-4 p-2 d-flex justify-content-around' >
+      <div  className='col-5 galerie-col-2' >
 
 
       <figure>
@@ -79,7 +78,7 @@ function Galerie() {
 
       </div>
 
-      <div  className='col-5 border border-dark galerie-col-2' >
+      <div  className='col-5  galerie-col-2' >
 
 
       <figure>

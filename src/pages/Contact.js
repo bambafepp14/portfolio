@@ -14,6 +14,7 @@ function Contact() {
         <div>
           <label htmlFor=''>Telefhone</label>
           <input type="telefhone" className="form-control"/>
+
         </div>
 
         <div>
@@ -43,7 +44,9 @@ function Contact() {
 
       <div className="d-flex flex-column mt-4" >
                <span>TELEPHONE</span> 
-                <span>0623125560</span>  
+                <span >
+                  <a href='tel:+33623125560'  >0623125560</a></span>  
+                
                 </div>
 
       
