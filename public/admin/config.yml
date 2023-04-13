@@ -1,0 +1,28 @@
+backend:
+  name: peppy-boba-b8df20
+  branch: main # Branch to update (optional; defaults to master)
+
+
+publish_mode: editorial_workflow
+
+
+
+
+media_folder: "public/images/" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/" # The src attribute for uploaded media will begin with /imag
+
+
+collections:
+  - name: "contenu" # Used in routes, e.g., /admin/collections/blog
+    label: "Contenu" # Used in the UI
+    folder: "contents" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "contenu"}
+      - {label: "ID", name: "id", widget: "number"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Type", name: "type", widget: "string"}
+      - {label: "Price", name: "price", widget: "number"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
