@@ -1,5 +1,5 @@
 backend:
-  name: peppy-boba-b8df20
+  name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 
 
