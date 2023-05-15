@@ -25,7 +25,7 @@ function Tarifs() {
       
 
 
-        <div    key={prestation.id} className='col-5  galerie-col-1 position-relative p-0'>
+        <div    key={prestation.id} className='col-md-5  galerie-col-1 position-relative p-0'>
           
 
         <figure >

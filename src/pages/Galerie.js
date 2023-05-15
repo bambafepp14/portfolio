@@ -30,7 +30,7 @@ console.log (galeries)
       {galeries.map(galerie=>
 
       
-      <div   key={galerie.id}  className='col-5   galerie-col-1'>
+      <div   key={galerie.id}  className='col-md-5   galerie-col-1'>
 
 
         <figure>
@@ -65,35 +65,7 @@ console.log (galeries)
 
       </div>
       
-      <div  className='row    m-4 p-2 d-flex justify-content-around' >
-      <div  className='col-5 galerie-col-2' >
-
-
-      <figure>
-        <img src='/images/bapteme.jpg' alt='accueil image 'className='img-fluid' />
-
-        <figcaption>BAPTEME</figcaption>
-
-        </figure>
-
-      </div>
-
-      <div  className='col-5  galerie-col-2' >
-
-
-      <figure>
-        <img src='/images/famille.jpg' alt='accueil image 'className='img-fluid' />
-
-        <figcaption>FAMILLE</figcaption>
-
-        </figure>
-
-      </div>
-
-
-
-      </div>
-
+      
       
       
     </div>

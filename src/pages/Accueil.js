@@ -34,7 +34,7 @@ function accueil() {
 
       {illustrations.map(illustration=> 
 
-<div  className=' border-danger  col-4 p-3'>
+<div  className=' border-danger  col-md-4 p-3' key={illustration.id}>
 
       
 <figure>

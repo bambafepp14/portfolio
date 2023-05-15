@@ -1,23 +1,29 @@
 import { Outlet,Link,useLocation } from "react-router-dom";
 
 const Header= ()=>{
+
+    const toggleMenu=()=>{
+        document.getElementById('navbarText').classList.toggle('show')
+    }
+      
+
       
     return(
-        <nav class=" navbar-dark   navbar navbar-expand-lg  bg-first" > 
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
+        <nav className=" navbar-dark   navbar navbar-expand-lg  bg-first" > 
+       <button onClick={toggleMenu} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button >
+  <div className="collapse navbar-collapse" id="navbarText">
    <Link to={'/'} >  <img src="/images/logo.png" className="imglog" /></Link>
-            <ul class="navbar-nav mx-auto">
+            <ul className="navbar-nav mx-auto">
                
-                <li class="nav-item p-5">
+                <li className="nav-item p-5">
                     <Link to={'/galerie'}className="text-white"> Galerie</Link>
                 </li>
-                <li class="nav-item p-5">
+                <li className="nav-item p-5">
                     <Link to={'/tarifs'} className="text-white"> Tarifs</Link>
                 </li>
-                <li class="nav-item p-5">
+                <li className="nav-item p-5">
                     <Link to={'/contact'} className="text-white"> Contact</Link>
                 </li>
 
