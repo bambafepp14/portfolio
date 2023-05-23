@@ -7,6 +7,7 @@ function Contact() {
 
   const [messageSent,setMessageSent]= useState(false)
   useEffect(()=>{
+    return
     const handleSubmit = (event) => {
       event.preventDefault();
     
@@ -22,7 +23,6 @@ function Contact() {
           setMessageSent(true)
 
 
-          
           
           
           console.log("Form successfully submitted")})
@@ -45,7 +45,7 @@ function Contact() {
       <div>  votre message a ete bien envoyé </div> 
       : 
          
-         <form  name= "contact" className='mx-auto mt-5' method='post' data-netlify="true" >
+         <form  action='/' name= "contact" className='mx-auto mt-5' method='post' data-netlify="true" >
           <input type="hidden" name="form-name" value="contact" />
         <div>
           <label htmlFor=''>Nom</label>
