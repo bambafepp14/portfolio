@@ -6,6 +6,7 @@ function Contact() {
 
 
   const [messageSent,setMessageSent]= useState(false)
+  /*
   useEffect(()=>{
     return
     const handleSubmit = (event) => {
@@ -33,7 +34,7 @@ function Contact() {
       .querySelector("form")
       .addEventListener("submit", handleSubmit);
 
-  },[])
+  },[])*/
 
   
   return (
