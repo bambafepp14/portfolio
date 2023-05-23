@@ -45,7 +45,7 @@ function Contact() {
       <div>  votre message a ete bien envoyé </div> 
       : 
          
-         <form  name= "contact" className='mx-auto mt-5' method='post' netlify >
+         <form  name= "contact" className='mx-auto mt-5' method='post' data-netlify="true" >
           <input type="hidden" name="form-name" value="contact" />
         <div>
           <label htmlFor=''>Nom</label>
