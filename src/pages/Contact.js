@@ -6,30 +6,30 @@ function Contact() {
 
 
     <div className="container">
-      <form action=''className='mx-auto mt-5' method='post'>
+      <form action=''className='mx-auto mt-5' method='post' netlify>
         <div>
           <label htmlFor=''>Nom</label>
-          <input type="nom" className="form-control"/>
+          <input type="text"  name= "nom" className="form-control"/>
         </div>
         <div>
           <label htmlFor=''>Telefhone</label>
-          <input type="telefhone" className="form-control"/>
+          <input type="tel"  name= "phonenumber" className="form-control"/>
 
         </div>
 
         <div>
           <label htmlFor=''>Email</label>
-          <input type="text" className= "form-control"/>
+          <input type="email" name="email" className= "form-control"/>
         </div>
         
         <div>
           <label htmlFor=''>Sujet de votre demande</label>
-          <input type="sujet de votre demande" className="form-control"/>
+          <input type="text"  name = "sujet" className="form-control"/>
         </div>
 
         <div>
           <label htmlFor=''>Redigez votre message</label>
-          <input type="redigez votre message" className="form-control -3 "/>
+          <textarea name="message" className="form-control -3 "/>
         </div>
        <button className="btn btn-primary mt-3">
         Envoyer

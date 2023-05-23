@@ -18,13 +18,13 @@ const Header= ()=>{
             <ul className="navbar-nav mx-auto">
                
                 <li className="nav-item p-5">
-                    <Link to={'/galerie'}className="text-white"> Galerie</Link>
+                    <Link to={'/galerie'}className="text-white text-decoration-none "> GALERIE</Link>
                 </li>
                 <li className="nav-item p-5">
-                    <Link to={'/tarifs'} className="text-white"> Tarifs</Link>
+                    <Link to={'/tarifs'} className="text-white text-decoration-none"> TARIFS</Link>
                 </li>
                 <li className="nav-item p-5">
-                    <Link to={'/contact'} className="text-white"> Contact</Link>
+                    <Link to={'/contact'} className="text-white text-decoration-none"> CONTACT</Link>
                 </li>
 
             </ul>
